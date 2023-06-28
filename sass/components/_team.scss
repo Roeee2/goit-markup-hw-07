@@ -49,13 +49,6 @@
       transition: $standard;
     }
 
-    li:hover icon,
-    li:focus icon {
-      fill: $white;
-      transition-property: fill;
-      transition: $standard;
-    }
-
     ul {
       list-style: none;
       display: flex;
