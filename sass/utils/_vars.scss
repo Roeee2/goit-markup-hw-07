@@ -1,4 +1,4 @@
-//COLOURS
+//PALETTE
 $background-color: #e5e5e5;
 $header-color: #212121;
 $text-color: #757575;
@@ -23,7 +23,10 @@ $description-bar: rgba(47, 48, 58, 0.8);
 $sub-button-border: rgba(255, 255, 255, 0.3);
 $form-border: #21212133;
 //STANDARD TRANSITION TIMING FUNCTION
-$standard: 250ms cubic-bezier(0.4, 0, 0.2, 1), ease-in-out;
+$standard: 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 //FONTS
 $main-font: "Roboto", sans-serif;
 $logo-font: "Raleway", sans-serif;
+//BG IMG
+$solutions-bg: linear-gradient($shadow, $bg-shadow),
+  url(./../images/header_background.jpg);
