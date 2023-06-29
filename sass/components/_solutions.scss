@@ -46,7 +46,7 @@
       transition: $standard;
       box-shadow: inset -5px -5px 10px $modal-shadow;
       text-shadow: 1px 1px 1px $black;
-      box-shadow: -5px -5px 10px $box-shadow;
+      box-shadow: inset 5px 5px 10px $box-shadow;
     }
 
     span {

@@ -34,5 +34,5 @@ $logo-font: "Raleway", sans-serif;
 $solutions-bg: linear-gradient($shadow, $bg-shadow),
   url(./../images/header_background.jpg);
 //SHADOWS
-$team-figure: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+$team-figure: 0px 1px 3px $modal-shadow3, 0px 1px 1px $modal-shadow2,
+  0px 2px 1px $modal-shadow;
