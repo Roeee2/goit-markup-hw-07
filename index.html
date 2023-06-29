@@ -561,72 +561,70 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" data-modal-close>
-          <svg class="socials-icon" width="22px" height="22px">
+        <button class="modal__close" data-modal-close>
+          <svg width="22px" height="22px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
-        <div class="contact-form">
+        <div class="contact">
           <h2>Zostaw swoje dane w formularzu poniżej</h2>
           <form name="contact-form" autocomplete="on" novalidate>
             <label>
-              <h3>Imię</h3>
-              <div class="contact-field">
-                <input type="text" name="contact-name" class="contact-form-box" />
+              <h3 class="contact__label-header">Imię</h3>
+              <div class="contact__field">
+                <input type="text" name="contact-name" class="contact__field--box"/>
                 <svg width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-person-black"></use>
+                  <use href="./../images/icons.svg#icon-person-black"></use>
                 </svg>
               </div>
             </label>
             <label>
-              <h3>Telefon</h3>
-              <div class="contact-field">
-                <input type="text" name="contact-phone" class="contact-form-box" />
+              <h3 class="contact__label-header">Telefon</h3>
+              <div class="contact__field">
+                <input type="text" name="contact-phone" class="contact__field--box" />
                 <svg width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-phone-black"></use>
+                  <use href="./../images/icons.svg#icon-phone-black"></use>
                 </svg>
               </div>
             </label>
             <label>
-              <h3>Email</h3>
-              <div class="contact-field">
-                <input type="email" name="contact-email" class="contact-form-box" />
+              <h3 class="contact__label-header">Email</h3>
+              <div class="contact__field">
+                <input type="email" name="contact-email" class="contact__field--box" />
                 <svg width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-email-black"></use>
+                  <use href="./../images/icons.svg#icon-email-black"></use>
                 </svg>
               </div>
             </label>
             <label>
-              <h3>Komentarz</h3>
-              <div class="contact-field">
-                <textarea class="contact-form-comment" name="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
+              <h3 class="contact__label-header">Komentarz</h3>
+              <div class="contact__field">
+                <textarea class="contact__comment" name="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
               </div>
             </label>
   
-              <div class="checkbox-container">
-                <input type="checkbox" id="checkbox1" name="contact-checkbox" class="checkbox" />
-                  
-              
-                <label for="checkbox1" class="declaration">
-                  <div class="empty-box">
-                    <svg width="16px" height="15px">
-                      <use href="./images/icons.svg#icon-checkbox"></use>
+              <div class="contact__checkbox-container">
+                <input type="checkbox" id="checkbox1" name="contact-checkbox"/>
+                <label for="checkbox1" class="contact__declaration">
+                  <div class="contact__empty-box">
+                    <svg width="16px" height="15px" class="contact__checkbox-container--empty">
+                      <use href="./../images/icons.svg#icon-checkbox"></use>
                     </svg>
                   </div>
-                  <div class="box-checked">
-                    <svg width="16px" height="15px">
-                      <use href="./images/icons.svg#icon-checkbox-blue"></use>
+                  <div class="contact__box-checked">
+                    <svg width="16px" height="15px" class="contact__checkbox-container--checked">
+                      <use href="./../images/icons.svg#icon-checkbox-blue"></use>
                     </svg>
                   </div>
-                  Oświadczam iż akceptuję <a class="declaration-link" href="#">Regulamin</a> i
-                <a class="declaration-link" href="#">Politykę Prywatności.</a>
+                  Oświadczam iż akceptuję <a class="contact__declaration-link" href="#">Regulamin</a> i
+                <a class="contact__declaration-link" href="#">Politykę Prywatności.</a>
                 </label>
 
               </div>
 
-            <div class="send-button">
-              <button type="submit" class="contact-button">
+            <div class="contact__send-button">
+              <button type="submit" class="contact__contact-button">
                 Wyślij
               </button>
             </div>
