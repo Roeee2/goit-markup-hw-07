@@ -151,6 +151,7 @@
   }
 
   &__checkbox-container {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 
@@ -162,7 +163,7 @@
 
     input[type="checkbox"] {
       right: 5px;
-      opacity: 100;
+      opacity: 0;
       position: relative;
 
       &:not(:checked) + .contact__declaration-label .contact__empty-box svg {
@@ -175,5 +176,11 @@
         transition-property: display;
       }
     }
+  }
+  &__empty-box,
+  &__box-checked {
+    left: 32px;
+    top: 432px;
+    position: absolute;
   }
 }
