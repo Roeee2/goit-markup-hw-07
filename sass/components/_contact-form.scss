@@ -70,7 +70,6 @@
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.42px;
-    top: 50%;
   }
 
   &__declaration-link {
@@ -112,7 +111,7 @@
     transition: $standard;
     box-shadow: inset -5px -5px 10px $modal-shadow;
     text-shadow: 1px 1px 1px $black;
-    box-shadow: inset 5px 5px 10px $box-shadow;
+    box-shadow:  inset 5px 5px 10px $box-shadow;
   }
 
   &__field:hover svg,
@@ -156,7 +155,7 @@
 
     &--empty,
     &--checked {
-      opacity: 0;
+      display: none;
       margin-right: 7px;
     }
 
@@ -166,13 +165,13 @@
       position: relative;
 
       &:not(:checked) + .contact__declaration-label .contact__empty-box svg {
-        opacity: 100;
+        display: block;
       }
 
       &:checked + .contact__declaration-label .contact__box-checked svg {
-        opacity: 100;
+        display: block;
         fill: $web-studio-blue;
-        transition-property: opacity;
+        transition-property: display;
       }
     }
   }
